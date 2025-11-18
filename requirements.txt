@@ -10,4 +10,6 @@ ensure
 joblib
 types-pyYAML
 Flask
-Flask-Core
+Flask-Cors
+psycopg2-binary
+
