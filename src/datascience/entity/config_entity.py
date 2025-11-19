@@ -17,3 +17,9 @@ class DataValidationConfig:
     unzip_data_dir: Path          # folder or file path
     STATUS_FILE: str              # path to a status file
     all_schema: Dict[str, Any]    # schema dictionary (e.g. COLUMNS)
+    
+    
+@dataclass
+class DataTransformationConfig:
+    root_dir: Path
+    data_path: Path

@@ -18,3 +18,11 @@ class DataValidationConfig:
     unzip_data_dir: Path
     STATUS_FILE: str
     all_schema: dict
+
+
+
+data transformation:
+  root_dir: artifacts/data_transformation
+  data_path: artifacts/data_ingestion/winequality-red.csv
+  
+
