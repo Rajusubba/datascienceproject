@@ -62,3 +62,366 @@ Source-Age: 0
 [2025-11-18 14:57:48,159: INFO: main: >>>>>>>>>> Stage Data Ingestion Stage completed <<<<<<<<<<
 
 x==========x
+[2025-11-18 19:22:59,436: INFO: common: yaml file: config/config.yaml loaded successfully
+[2025-11-18 19:22:59,438: INFO: common: yaml file: params.yaml loaded successfully
+[2025-11-18 19:22:59,440: INFO: common: yaml file: schema.yaml loaded successfully
+[2025-11-18 19:22:59,441: INFO: common: Created directory at: artifacts
+[2025-11-18 19:22:59,441: INFO: common: Created directory at: artifacts/data_validation
+[2025-11-18 19:24:31,822: INFO: common: yaml file: config/config.yaml loaded successfully
+[2025-11-18 19:24:31,825: INFO: common: yaml file: params.yaml loaded successfully
+[2025-11-18 19:24:31,827: INFO: common: yaml file: schema.yaml loaded successfully
+[2025-11-18 19:24:31,828: INFO: common: Created directory at: artifacts
+[2025-11-18 19:24:31,828: INFO: common: Created directory at: artifacts/data_validation
+[2025-11-18 19:27:24,485: INFO: common: yaml file: config/config.yaml loaded successfully
+[2025-11-18 19:27:24,488: INFO: common: yaml file: params.yaml loaded successfully
+[2025-11-18 19:27:24,490: INFO: common: yaml file: schema.yaml loaded successfully
+[2025-11-18 19:27:24,491: INFO: common: Created directory at: artifacts
+[2025-11-18 19:27:24,492: INFO: common: Created directory at: artifacts/data_validation
+[2025-11-18 19:31:47,390: INFO: common: yaml file: config/config.yaml loaded successfully
+[2025-11-18 19:31:47,392: INFO: common: yaml file: params.yaml loaded successfully
+[2025-11-18 19:31:47,394: INFO: common: yaml file: schema.yaml loaded successfully
+[2025-11-18 19:31:47,395: INFO: common: Created directory at: artifacts
+[2025-11-18 19:31:47,395: INFO: common: Created directory at: artifacts/data_validation
+[2025-11-18 19:38:14,801: INFO: common: yaml file: config/config.yaml loaded successfully
+[2025-11-18 19:38:14,802: INFO: common: yaml file: params.yaml loaded successfully
+[2025-11-18 19:38:14,804: INFO: common: yaml file: schema.yaml loaded successfully
+[2025-11-18 19:38:14,804: INFO: common: Created directory at: artifacts
+[2025-11-18 19:38:14,805: INFO: common: Created directory at: artifacts/data_validation
+[2025-11-18 19:38:16,319: INFO: common: yaml file: config/config.yaml loaded successfully
+[2025-11-18 19:38:16,321: INFO: common: yaml file: params.yaml loaded successfully
+[2025-11-18 19:38:16,323: INFO: common: yaml file: schema.yaml loaded successfully
+[2025-11-18 19:38:16,324: INFO: common: Created directory at: artifacts
+[2025-11-18 19:38:16,325: INFO: common: Created directory at: artifacts/data_validation
+[2025-11-18 19:45:32,690: INFO: common: yaml file: config/config.yaml loaded successfully
+[2025-11-18 19:45:32,693: INFO: common: yaml file: params.yaml loaded successfully
+[2025-11-18 19:45:32,695: INFO: common: yaml file: schema.yaml loaded successfully
+[2025-11-18 19:45:32,696: INFO: common: Created directory at: artifacts
+[2025-11-18 19:45:32,697: INFO: common: Created directory at: artifacts/data_validation
+[2025-11-18 19:57:22,238: INFO: common: yaml file: config/config.yaml loaded successfully
+[2025-11-18 19:57:22,241: INFO: common: yaml file: params.yaml loaded successfully
+[2025-11-18 19:57:22,243: INFO: common: yaml file: schema.yaml loaded successfully
+[2025-11-18 19:57:22,244: INFO: common: Created directory at: artifacts
+[2025-11-18 19:57:22,244: INFO: common: Created directory at: artifacts/data_validation
+[2025-11-18 20:37:43,165: INFO: main: >>>>>>>>>> Stage Data Ingestion Stage started <<<<<<<<<<
+[2025-11-18 20:37:43,166: ERROR: main: while scanning for the next token
+found character '@' that cannot start any token
+  in "config/config.yaml", line 16, column 1
+Traceback (most recent call last):
+  File "/Users/rajusubba/Documents/MLOpsProject/datascienceproject/main.py", line 9, in <module>
+    data_ingestion.initiate_data_ingestion()
+  File "/Users/rajusubba/Documents/MLOpsProject/datascienceproject/src/datascience/pipeline/data_ingestion_pipeline.py", line 11, in initiate_data_ingestion
+    config=ConfigurationManager()
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/rajusubba/Documents/MLOpsProject/datascienceproject/src/datascience/config/configuration.py", line 9, in __init__
+    self.config=read_yaml(config_filepath)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/rajusubba/Documents/MLOpsProject/datascienceproject/venv/lib/python3.11/site-packages/ensure/main.py", line 872, in __call__
+    return_val = self.f(*args, **kwargs)
+                 ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/rajusubba/Documents/MLOpsProject/datascienceproject/src/datascience/utils/common.py", line 27, in read_yaml
+    content = yaml.safe_load(yaml_file)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/rajusubba/Documents/MLOpsProject/datascienceproject/venv/lib/python3.11/site-packages/yaml/__init__.py", line 125, in safe_load
+    return load(stream, SafeLoader)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/rajusubba/Documents/MLOpsProject/datascienceproject/venv/lib/python3.11/site-packages/yaml/__init__.py", line 81, in load
+    return loader.get_single_data()
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/rajusubba/Documents/MLOpsProject/datascienceproject/venv/lib/python3.11/site-packages/yaml/constructor.py", line 49, in get_single_data
+    node = self.get_single_node()
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/rajusubba/Documents/MLOpsProject/datascienceproject/venv/lib/python3.11/site-packages/yaml/composer.py", line 36, in get_single_node
+    document = self.compose_document()
+               ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/rajusubba/Documents/MLOpsProject/datascienceproject/venv/lib/python3.11/site-packages/yaml/composer.py", line 55, in compose_document
+    node = self.compose_node(None, None)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/rajusubba/Documents/MLOpsProject/datascienceproject/venv/lib/python3.11/site-packages/yaml/composer.py", line 84, in compose_node
+    node = self.compose_mapping_node(anchor)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/rajusubba/Documents/MLOpsProject/datascienceproject/venv/lib/python3.11/site-packages/yaml/composer.py", line 133, in compose_mapping_node
+    item_value = self.compose_node(node, item_key)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/rajusubba/Documents/MLOpsProject/datascienceproject/venv/lib/python3.11/site-packages/yaml/composer.py", line 84, in compose_node
+    node = self.compose_mapping_node(anchor)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/rajusubba/Documents/MLOpsProject/datascienceproject/venv/lib/python3.11/site-packages/yaml/composer.py", line 127, in compose_mapping_node
+    while not self.check_event(MappingEndEvent):
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/rajusubba/Documents/MLOpsProject/datascienceproject/venv/lib/python3.11/site-packages/yaml/parser.py", line 98, in check_event
+    self.current_event = self.state()
+                         ^^^^^^^^^^^^
+  File "/Users/rajusubba/Documents/MLOpsProject/datascienceproject/venv/lib/python3.11/site-packages/yaml/parser.py", line 428, in parse_block_mapping_key
+    if self.check_token(KeyToken):
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/rajusubba/Documents/MLOpsProject/datascienceproject/venv/lib/python3.11/site-packages/yaml/scanner.py", line 116, in check_token
+    self.fetch_more_tokens()
+  File "/Users/rajusubba/Documents/MLOpsProject/datascienceproject/venv/lib/python3.11/site-packages/yaml/scanner.py", line 258, in fetch_more_tokens
+    raise ScannerError("while scanning for the next token", None,
+yaml.scanner.ScannerError: while scanning for the next token
+found character '@' that cannot start any token
+  in "config/config.yaml", line 16, column 1
+[2025-11-18 20:38:04,261: INFO: main: >>>>>>>>>> Stage Data Ingestion Stage started <<<<<<<<<<
+[2025-11-18 20:38:04,262: ERROR: main: while scanning for the next token
+found character '@' that cannot start any token
+  in "config/config.yaml", line 16, column 1
+Traceback (most recent call last):
+  File "/Users/rajusubba/Documents/MLOpsProject/datascienceproject/main.py", line 9, in <module>
+    data_ingestion.initiate_data_ingestion()
+  File "/Users/rajusubba/Documents/MLOpsProject/datascienceproject/src/datascience/pipeline/data_ingestion_pipeline.py", line 11, in initiate_data_ingestion
+    config=ConfigurationManager()
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/rajusubba/Documents/MLOpsProject/datascienceproject/src/datascience/config/configuration.py", line 9, in __init__
+    self.config=read_yaml(config_filepath)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/rajusubba/Documents/MLOpsProject/datascienceproject/venv/lib/python3.11/site-packages/ensure/main.py", line 872, in __call__
+    return_val = self.f(*args, **kwargs)
+                 ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/rajusubba/Documents/MLOpsProject/datascienceproject/src/datascience/utils/common.py", line 27, in read_yaml
+    content = yaml.safe_load(yaml_file)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/rajusubba/Documents/MLOpsProject/datascienceproject/venv/lib/python3.11/site-packages/yaml/__init__.py", line 125, in safe_load
+    return load(stream, SafeLoader)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/rajusubba/Documents/MLOpsProject/datascienceproject/venv/lib/python3.11/site-packages/yaml/__init__.py", line 81, in load
+    return loader.get_single_data()
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/rajusubba/Documents/MLOpsProject/datascienceproject/venv/lib/python3.11/site-packages/yaml/constructor.py", line 49, in get_single_data
+    node = self.get_single_node()
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/rajusubba/Documents/MLOpsProject/datascienceproject/venv/lib/python3.11/site-packages/yaml/composer.py", line 36, in get_single_node
+    document = self.compose_document()
+               ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/rajusubba/Documents/MLOpsProject/datascienceproject/venv/lib/python3.11/site-packages/yaml/composer.py", line 55, in compose_document
+    node = self.compose_node(None, None)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/rajusubba/Documents/MLOpsProject/datascienceproject/venv/lib/python3.11/site-packages/yaml/composer.py", line 84, in compose_node
+    node = self.compose_mapping_node(anchor)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/rajusubba/Documents/MLOpsProject/datascienceproject/venv/lib/python3.11/site-packages/yaml/composer.py", line 133, in compose_mapping_node
+    item_value = self.compose_node(node, item_key)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/rajusubba/Documents/MLOpsProject/datascienceproject/venv/lib/python3.11/site-packages/yaml/composer.py", line 84, in compose_node
+    node = self.compose_mapping_node(anchor)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/rajusubba/Documents/MLOpsProject/datascienceproject/venv/lib/python3.11/site-packages/yaml/composer.py", line 127, in compose_mapping_node
+    while not self.check_event(MappingEndEvent):
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/rajusubba/Documents/MLOpsProject/datascienceproject/venv/lib/python3.11/site-packages/yaml/parser.py", line 98, in check_event
+    self.current_event = self.state()
+                         ^^^^^^^^^^^^
+  File "/Users/rajusubba/Documents/MLOpsProject/datascienceproject/venv/lib/python3.11/site-packages/yaml/parser.py", line 428, in parse_block_mapping_key
+    if self.check_token(KeyToken):
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/rajusubba/Documents/MLOpsProject/datascienceproject/venv/lib/python3.11/site-packages/yaml/scanner.py", line 116, in check_token
+    self.fetch_more_tokens()
+  File "/Users/rajusubba/Documents/MLOpsProject/datascienceproject/venv/lib/python3.11/site-packages/yaml/scanner.py", line 258, in fetch_more_tokens
+    raise ScannerError("while scanning for the next token", None,
+yaml.scanner.ScannerError: while scanning for the next token
+found character '@' that cannot start any token
+  in "config/config.yaml", line 16, column 1
+[2025-11-18 20:39:30,250: INFO: main: >>>>>>>>>> Stage Data Ingestion Stage started <<<<<<<<<<
+[2025-11-18 20:39:30,250: ERROR: main: while scanning for the next token
+found character '@' that cannot start any token
+  in "config/config.yaml", line 16, column 1
+Traceback (most recent call last):
+  File "/Users/rajusubba/Documents/MLOpsProject/datascienceproject/main.py", line 9, in <module>
+    data_ingestion.initiate_data_ingestion()
+  File "/Users/rajusubba/Documents/MLOpsProject/datascienceproject/src/datascience/pipeline/data_ingestion_pipeline.py", line 11, in initiate_data_ingestion
+    config=ConfigurationManager()
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/rajusubba/Documents/MLOpsProject/datascienceproject/src/datascience/config/configuration.py", line 9, in __init__
+    self.config=read_yaml(config_filepath)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/rajusubba/Documents/MLOpsProject/datascienceproject/venv/lib/python3.11/site-packages/ensure/main.py", line 872, in __call__
+    return_val = self.f(*args, **kwargs)
+                 ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/rajusubba/Documents/MLOpsProject/datascienceproject/src/datascience/utils/common.py", line 27, in read_yaml
+    content = yaml.safe_load(yaml_file)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/rajusubba/Documents/MLOpsProject/datascienceproject/venv/lib/python3.11/site-packages/yaml/__init__.py", line 125, in safe_load
+    return load(stream, SafeLoader)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/rajusubba/Documents/MLOpsProject/datascienceproject/venv/lib/python3.11/site-packages/yaml/__init__.py", line 81, in load
+    return loader.get_single_data()
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/rajusubba/Documents/MLOpsProject/datascienceproject/venv/lib/python3.11/site-packages/yaml/constructor.py", line 49, in get_single_data
+    node = self.get_single_node()
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/rajusubba/Documents/MLOpsProject/datascienceproject/venv/lib/python3.11/site-packages/yaml/composer.py", line 36, in get_single_node
+    document = self.compose_document()
+               ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/rajusubba/Documents/MLOpsProject/datascienceproject/venv/lib/python3.11/site-packages/yaml/composer.py", line 55, in compose_document
+    node = self.compose_node(None, None)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/rajusubba/Documents/MLOpsProject/datascienceproject/venv/lib/python3.11/site-packages/yaml/composer.py", line 84, in compose_node
+    node = self.compose_mapping_node(anchor)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/rajusubba/Documents/MLOpsProject/datascienceproject/venv/lib/python3.11/site-packages/yaml/composer.py", line 133, in compose_mapping_node
+    item_value = self.compose_node(node, item_key)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/rajusubba/Documents/MLOpsProject/datascienceproject/venv/lib/python3.11/site-packages/yaml/composer.py", line 84, in compose_node
+    node = self.compose_mapping_node(anchor)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/rajusubba/Documents/MLOpsProject/datascienceproject/venv/lib/python3.11/site-packages/yaml/composer.py", line 127, in compose_mapping_node
+    while not self.check_event(MappingEndEvent):
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/rajusubba/Documents/MLOpsProject/datascienceproject/venv/lib/python3.11/site-packages/yaml/parser.py", line 98, in check_event
+    self.current_event = self.state()
+                         ^^^^^^^^^^^^
+  File "/Users/rajusubba/Documents/MLOpsProject/datascienceproject/venv/lib/python3.11/site-packages/yaml/parser.py", line 428, in parse_block_mapping_key
+    if self.check_token(KeyToken):
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/rajusubba/Documents/MLOpsProject/datascienceproject/venv/lib/python3.11/site-packages/yaml/scanner.py", line 116, in check_token
+    self.fetch_more_tokens()
+  File "/Users/rajusubba/Documents/MLOpsProject/datascienceproject/venv/lib/python3.11/site-packages/yaml/scanner.py", line 258, in fetch_more_tokens
+    raise ScannerError("while scanning for the next token", None,
+yaml.scanner.ScannerError: while scanning for the next token
+found character '@' that cannot start any token
+  in "config/config.yaml", line 16, column 1
+[2025-11-18 20:41:21,546: INFO: <ipython-input-2-c72faddeeccf>: >>>>>>>>>> Stage Data Ingestion Stage started <<<<<<<<<<
+[2025-11-18 20:41:21,547: ERROR: <ipython-input-2-c72faddeeccf>: while scanning for the next token
+found character '@' that cannot start any token
+  in "config/config.yaml", line 16, column 1
+Traceback (most recent call last):
+  File "<ipython-input-2-c72faddeeccf>", line 10, in <module>
+    data_ingestion.initiate_data_ingestion()
+  File "/Users/rajusubba/Documents/MLOpsProject/datascienceproject/src/datascience/pipeline/data_ingestion_pipeline.py", line 11, in initiate_data_ingestion
+    config=ConfigurationManager()
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/rajusubba/Documents/MLOpsProject/datascienceproject/src/datascience/config/configuration.py", line 9, in __init__
+    self.config=read_yaml(config_filepath)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/rajusubba/Documents/MLOpsProject/datascienceproject/venv/lib/python3.11/site-packages/ensure/main.py", line 872, in __call__
+    return_val = self.f(*args, **kwargs)
+                 ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/rajusubba/Documents/MLOpsProject/datascienceproject/src/datascience/utils/common.py", line 27, in read_yaml
+    content = yaml.safe_load(yaml_file)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/rajusubba/Documents/MLOpsProject/datascienceproject/venv/lib/python3.11/site-packages/yaml/__init__.py", line 125, in safe_load
+    return load(stream, SafeLoader)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/rajusubba/Documents/MLOpsProject/datascienceproject/venv/lib/python3.11/site-packages/yaml/__init__.py", line 81, in load
+    return loader.get_single_data()
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/rajusubba/Documents/MLOpsProject/datascienceproject/venv/lib/python3.11/site-packages/yaml/constructor.py", line 49, in get_single_data
+    node = self.get_single_node()
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/rajusubba/Documents/MLOpsProject/datascienceproject/venv/lib/python3.11/site-packages/yaml/composer.py", line 36, in get_single_node
+    document = self.compose_document()
+               ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/rajusubba/Documents/MLOpsProject/datascienceproject/venv/lib/python3.11/site-packages/yaml/composer.py", line 55, in compose_document
+    node = self.compose_node(None, None)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/rajusubba/Documents/MLOpsProject/datascienceproject/venv/lib/python3.11/site-packages/yaml/composer.py", line 84, in compose_node
+    node = self.compose_mapping_node(anchor)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/rajusubba/Documents/MLOpsProject/datascienceproject/venv/lib/python3.11/site-packages/yaml/composer.py", line 133, in compose_mapping_node
+    item_value = self.compose_node(node, item_key)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/rajusubba/Documents/MLOpsProject/datascienceproject/venv/lib/python3.11/site-packages/yaml/composer.py", line 84, in compose_node
+    node = self.compose_mapping_node(anchor)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/rajusubba/Documents/MLOpsProject/datascienceproject/venv/lib/python3.11/site-packages/yaml/composer.py", line 127, in compose_mapping_node
+    while not self.check_event(MappingEndEvent):
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/rajusubba/Documents/MLOpsProject/datascienceproject/venv/lib/python3.11/site-packages/yaml/parser.py", line 98, in check_event
+    self.current_event = self.state()
+                         ^^^^^^^^^^^^
+  File "/Users/rajusubba/Documents/MLOpsProject/datascienceproject/venv/lib/python3.11/site-packages/yaml/parser.py", line 428, in parse_block_mapping_key
+    if self.check_token(KeyToken):
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/rajusubba/Documents/MLOpsProject/datascienceproject/venv/lib/python3.11/site-packages/yaml/scanner.py", line 116, in check_token
+    self.fetch_more_tokens()
+  File "/Users/rajusubba/Documents/MLOpsProject/datascienceproject/venv/lib/python3.11/site-packages/yaml/scanner.py", line 258, in fetch_more_tokens
+    raise ScannerError("while scanning for the next token", None,
+yaml.scanner.ScannerError: while scanning for the next token
+found character '@' that cannot start any token
+  in "config/config.yaml", line 16, column 1
+[2025-11-18 20:46:25,310: INFO: main: >>>>>>>>>> Stage Data Ingestion Stage started <<<<<<<<<<
+[2025-11-18 20:46:25,311: INFO: common: yaml file: config/config.yaml loaded successfully
+[2025-11-18 20:46:25,311: INFO: common: yaml file: params.yaml loaded successfully
+[2025-11-18 20:46:25,312: INFO: common: yaml file: schema.yaml loaded successfully
+[2025-11-18 20:46:25,312: INFO: common: Created directory at: artifacts
+[2025-11-18 20:46:25,312: INFO: common: Created directory at: artifacts/data_ingestion
+[2025-11-18 20:46:25,312: INFO: data_ingestion: File already exists
+[2025-11-18 20:46:25,315: INFO: main: >>>>>>>>>> Stage Data Ingestion Stage completed <<<<<<<<<<
+
+x==========x
+[2025-11-18 20:46:25,315: INFO: main: >>>>>>>>>> Stage Data Validation Stage started <<<<<<<<<<
+[2025-11-18 20:46:25,315: ERROR: main: 'DataValidationTrainingPipeline' object has no attribute 'initiatee_data_validation'
+Traceback (most recent call last):
+  File "/Users/rajusubba/Documents/MLOpsProject/datascienceproject/main.py", line 21, in <module>
+    data_validation_pipeline.initiatee_data_validation()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'DataValidationTrainingPipeline' object has no attribute 'initiatee_data_validation'
+[2025-11-18 20:49:02,084: INFO: main: >>>>>>>>>> Stage Data Ingestion Stage started <<<<<<<<<<
+[2025-11-18 20:49:02,085: INFO: common: yaml file: config/config.yaml loaded successfully
+[2025-11-18 20:49:02,086: INFO: common: yaml file: params.yaml loaded successfully
+[2025-11-18 20:49:02,087: INFO: common: yaml file: schema.yaml loaded successfully
+[2025-11-18 20:49:02,087: INFO: common: Created directory at: artifacts
+[2025-11-18 20:49:02,087: INFO: common: Created directory at: artifacts/data_ingestion
+[2025-11-18 20:49:02,087: INFO: data_ingestion: File already exists
+[2025-11-18 20:49:02,088: INFO: main: >>>>>>>>>> Stage Data Ingestion Stage completed <<<<<<<<<<
+
+x==========x
+[2025-11-18 20:49:02,088: INFO: main: >>>>>>>>>> Stage Data Validation Stage started <<<<<<<<<<
+[2025-11-18 20:49:02,088: ERROR: main: 'DataValidationTrainingPipeline' object has no attribute 'initiate_data_validation'
+Traceback (most recent call last):
+  File "/Users/rajusubba/Documents/MLOpsProject/datascienceproject/main.py", line 21, in <module>
+    data_validation_pipeline.initiate_data_validation()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'DataValidationTrainingPipeline' object has no attribute 'initiate_data_validation'
+[2025-11-18 20:50:11,050: INFO: main: >>>>>>>>>> Stage Data Ingestion Stage started <<<<<<<<<<
+[2025-11-18 20:50:11,051: INFO: common: yaml file: config/config.yaml loaded successfully
+[2025-11-18 20:50:11,052: INFO: common: yaml file: params.yaml loaded successfully
+[2025-11-18 20:50:11,052: INFO: common: yaml file: schema.yaml loaded successfully
+[2025-11-18 20:50:11,052: INFO: common: Created directory at: artifacts
+[2025-11-18 20:50:11,052: INFO: common: Created directory at: artifacts/data_ingestion
+[2025-11-18 20:50:11,053: INFO: data_ingestion: File already exists
+[2025-11-18 20:50:11,054: INFO: main: >>>>>>>>>> Stage Data Ingestion Stage completed <<<<<<<<<<
+
+x==========x
+[2025-11-18 20:50:11,054: INFO: main: >>>>>>>>>> Stage Data Validation Stage started <<<<<<<<<<
+[2025-11-18 20:50:11,054: ERROR: main: 'DataValidationTrainingPipeline' object has no attribute 'initiate_data_validation'
+Traceback (most recent call last):
+  File "/Users/rajusubba/Documents/MLOpsProject/datascienceproject/main.py", line 21, in <module>
+    data_validation_pipeline.initiate_data_validation()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'DataValidationTrainingPipeline' object has no attribute 'initiate_data_validation'
+[2025-11-18 20:53:30,066: INFO: main: >>>>>>>>>> Stage Data Ingestion Stage started <<<<<<<<<<
+[2025-11-18 20:53:30,067: INFO: common: yaml file: config/config.yaml loaded successfully
+[2025-11-18 20:53:30,067: INFO: common: yaml file: params.yaml loaded successfully
+[2025-11-18 20:53:30,068: INFO: common: yaml file: schema.yaml loaded successfully
+[2025-11-18 20:53:30,068: INFO: common: Created directory at: artifacts
+[2025-11-18 20:53:30,068: INFO: common: Created directory at: artifacts/data_ingestion
+[2025-11-18 20:53:30,068: INFO: data_ingestion: File already exists
+[2025-11-18 20:53:30,069: INFO: main: >>>>>>>>>> Stage Data Ingestion Stage completed <<<<<<<<<<
+
+x==========x
+[2025-11-18 20:53:30,069: INFO: main: >>>>>>>>>> Stage Data Validation Stage started <<<<<<<<<<
+[2025-11-18 20:53:30,069: ERROR: main: 'DataValidationTrainingPipeline' object has no attribute 'initiate_data_validation'
+Traceback (most recent call last):
+  File "/Users/rajusubba/Documents/MLOpsProject/datascienceproject/main.py", line 21, in <module>
+    data_validation_pipeline.initiate_data_validation()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'DataValidationTrainingPipeline' object has no attribute 'initiate_data_validation'
+[2025-11-18 20:56:09,447: INFO: main: >>>>>>>>>> Stage Data Ingestion Stage started <<<<<<<<<<
+[2025-11-18 20:56:09,448: INFO: common: yaml file: config/config.yaml loaded successfully
+[2025-11-18 20:56:09,448: INFO: common: yaml file: params.yaml loaded successfully
+[2025-11-18 20:56:09,449: INFO: common: yaml file: schema.yaml loaded successfully
+[2025-11-18 20:56:09,449: INFO: common: Created directory at: artifacts
+[2025-11-18 20:56:09,449: INFO: common: Created directory at: artifacts/data_ingestion
+[2025-11-18 20:56:09,449: INFO: data_ingestion: File already exists
+[2025-11-18 20:56:09,451: INFO: main: >>>>>>>>>> Stage Data Ingestion Stage completed <<<<<<<<<<
+
+x==========x
+[2025-11-18 20:56:09,451: INFO: main: >>>>>>>>>> Stage Data Validation Stage started <<<<<<<<<<
+[2025-11-18 20:56:09,451: INFO: common: yaml file: config/config.yaml loaded successfully
+[2025-11-18 20:56:09,452: INFO: common: yaml file: params.yaml loaded successfully
+[2025-11-18 20:56:09,452: INFO: common: yaml file: schema.yaml loaded successfully
+[2025-11-18 20:56:09,452: INFO: common: Created directory at: artifacts
+[2025-11-18 20:56:09,453: INFO: common: Created directory at: artifacts/data_validation
+[2025-11-18 20:56:09,457: INFO: main: >>>>>>>>>> Stage Data Validation Stage completed <<<<<<<<<<
+
+x==========x
